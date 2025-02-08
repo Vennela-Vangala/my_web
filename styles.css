@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #fff;
-    background: url('https://i.pinimg.com/736x/fd/07/7e/fd077ead179d4484f6bd4f5223a27068.jpg') no-repeat center center/cover;
+    background: url('https://i.pinimg.com/736x/89/61/3a/89613a64ebe25265a6bad9b7eb6313b6.jpg') no-repeat center center/cover;
     background-size: cover;
     background-attachment: fixed;  /* This makes the background stay fixed */
 }
@@ -20,7 +20,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: url('https://i.pinimg.com/736x/cf/32/3b/cf323b3b7ffeb50d0199e773bcb07e85.jpg') no-repeat center center/cover;
+    background: url('https://i.pinimg.com/736x/ed/2e/45/ed2e459c2771eb6c03f6fa2357349a01.jpg') no-repeat center center/cover;
     background-size: cover;
     z-index: 1000;
     padding: 10px 0;
@@ -83,7 +83,7 @@ section {
     color: black;
     gap: 30px; /* Spacing between image and text */
     flex-wrap: wrap; /* Ensures content wraps on smaller screens */
-    background: url('https://i.pinimg.com/originals/47/0e/39/470e39c7c57bb440e5e7a105b1c38db4.jpg') no-repeat center center/cover;
+    background: url('https://i.pinimg.com/736x/ed/2e/45/ed2e459c2771eb6c03f6fa2357349a01.jpg') no-repeat center center/cover;
     background-size: cover;
     padding: 60px 20px;
 }
