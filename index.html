@@ -1,107 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investor Profile - Vennela</title>
+    <title>Vennela's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
     <!-- Navigation Bar -->
     <header>
-        <nav class="nav-container">
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#investments">Investments</a></li>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about">
-        <div class="container about-container">
-            <div class="about-image">
-                <img src="your-image.jpg" alt="Vennela's Photo" class="about-img">
-            </div>
+        <div class="about-container">
+            <img src="your-image.jpg" alt="Vennela">
             <div class="about-text">
-                <h2>About Me</h2>
-                <p>
-                    Hi, I'm <strong>Vennela</strong>, a passionate and driven Computer Science Engineering student with a keen interest in <strong>technology, event management, and creative design</strong>. I thrive on <strong>solving problems, leading teams, and bringing innovative ideas to life</strong>.
-                    With experience in <strong>data analysis, email marketing, and content creation</strong>, I am constantly exploring new ways to merge my technical expertise with my creativity. As a <strong>class representative and coordinator for training & placements</strong>, I have honed my <strong>leadership, communication, and organizational skills</strong>.
-                    Apart from my academic pursuits, I am an aspiring <strong>entrepreneur</strong> working on launching my own <strong>event management startup</strong>. I believe in the power of <strong>designing unforgettable experiences</strong>, and I am committed to creating events that are as unique as the people they celebrate.
-                    I am also deeply interested in <strong>mental health awareness and AI applications in security and wellness</strong>. My projects, such as <strong>Mental Health Prediction Using AI</strong> and <strong>AI-based Home Security System</strong>, reflect my passion for leveraging technology to solve real-world challenges.
-                    Whether it's <strong>writing, fitness, negotiation strategies, or coding</strong>, I am always eager to learn, grow, and push my limits. Let's connect and build something impactful together!
-                </p>
+                <h2 class="typing-text">Hi, I'm Vennela</h2>
+                <p>I'm a passionate Computer Science Engineering student, fitness trainer, and an aspiring entrepreneur in event management.</p>
+                <p>I have experience in data analysis, AI-driven security systems, and content creation for soft skills training.</p>
+                <a href="your-resume.pdf" class="btn">Download Resume</a>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <p>Highlighting my best work and key projects.</p>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/500" alt="Project 1">
-                <div class="portfolio-text">
-                    <h3>Project 1</h3>
-                    <p>Short description of the project goes here.</p>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Mental Health Prediction AI</h3>
+                <p>Using AI to analyze and predict mental health trends, reducing stigma and improving access to care.</p>
             </div>
-            <div class="portfolio-item">
-                <img src="https://via.placeholder.com/500" alt="Project 2">
-                <div class="portfolio-text">
-                    <h3>Project 2</h3>
-                    <p>Short description of the project goes here.</p>
-                </div>
+            <div class="project-card">
+                <h3>AI-Based Home Security System</h3>
+                <p>Implemented Random Forest for false alarm detection and Isolation Forest for suspicious activity monitoring.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Investments Section -->
-    <section id="investments">
-        <div class="container">
-            <h2>Investments</h2>
-            <p>Explore my investment portfolio.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <strong>vennela@example.com</strong></p>
-            <p>Mobile: <strong>9642414191</strong></p>
-        </div>
+        <h2>Contact Me</h2>
+        <form action="your-server-script.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
-</body>
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, fill out the form below:</p>
-        <form action="https://formsubmit.co/vennelareddy346@gmail.com" method="POST">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
-    </div>
-</section>
-</html>
 
+</body>
+</html>
