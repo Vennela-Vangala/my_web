@@ -10,9 +10,8 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #fff;
-    background: url('https://i.pinimg.com/736x/89/61/3a/89613a64ebe25265a6bad9b7eb6313b6.jpg') no-repeat center center/cover;
+    background: url('https://i.pinimg.com/736x/fd/07/7e/fd077ead179d4484f6bd4f5223a27068.jpg') no-repeat center center/cover;
     background-size: cover;
-    background-attachment: fixed;  /* This makes the background stay fixed */
 }
 
 /* Navigation Bar */
@@ -20,14 +19,14 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: url('https://i.pinimg.com/736x/e9/04/fd/e904fdd59c74a1f774a9e565d3dd23c5.jpg') no-repeat center center/cover;
+    background: url('https://i.pinimg.com/736x/cf/32/3b/cf323b3b7ffeb50d0199e773bcb07e85.jpg') no-repeat center center/cover;
     background-size: cover;
     z-index: 1000;
     padding: 10px 0;
 }
 
 /* Navigation Bar Styling */
-.nav-container {
+.classic-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,14 +34,14 @@ header {
 }
 
 /* Logo */
-.nav-container .logo {
+.classic-nav .logo {
     font-size: 1.8em;
     font-weight: bold;
     color: #f4b400;
 }
 
 /* This ensures navigation items are side by side */
-.nav-links {
+.classic-nav ul {
     display: flex;
     list-style: none;
     gap: 30px; /* Adjusts spacing between menu items */
@@ -51,11 +50,11 @@ header {
 }
 
 /* Individual Menu Items */
-.nav-links li {
+.classic-nav ul li {
     display: inline-block;
 }
 
-.nav-links li a {
+.classic-nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -65,7 +64,7 @@ header {
 }
 
 /* Hover Effect */
-.nav-links li a:hover {
+.classic-nav ul li a:hover {
     color: #f4b400;
 }
 
@@ -75,137 +74,33 @@ section {
     text-align: center;
 }
 
-/* About Section - Side by Side Layout */
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    gap: 30px; /* Spacing between image and text */
-    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
-    background: url('https://i.pinimg.com/736x/ed/2e/45/ed2e459c2771eb6c03f6fa2357349a01.jpg') no-repeat center center/cover;
-    background-size: cover;
-    padding: 80px 20px;
-}
-
-.about-image {
-    flex: 1;
-    text-align: center;
-}
-
-.about-img {
-    width: 350px;    /* Make the width 300px */
-    height: 500px;   /* Make the height 300px to form a square */
-    border-radius: 0%;  /* Remove the circular border-radius for square shape */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    object-fit: cover;  /* Ensures the image fits the square without distortion */
-}
-
-
-.about-text {
-    flex: 2;
-    text-align: left;
-    font-size: 1.1em;
-}
-
-/* Portfolio Section - Side by Side Layout */
-#portfolio .container {
-    display: flex;
-    color: black;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    background: url('https://i.pinimg.com/originals/60/4d/67/604d675c5f7d51d75b1802d03d357279.jpg') no-repeat center center/cover;
-    background-size: cover;
-    padding: 60px 20px;
-}
-
-.portfolio-item {
-    display: flex;
-    color: black;
-    justify-content: space-between;
-    gap: 30px;
-    width: 100%;
-}
-
-.portfolio-item img {
-    width: 45%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Investments Section - New Background */
-#investments {
-    background: url('https://i.pinimg.com/736x/ed/2e/45/ed2e459c2771eb6c03f6fa2357349a01.jpg') no-repeat center center/cover;
-    background-size: cover;
-    padding: 60px 20px;
-    color: white;
-    text-align: center;
-}
-
-/* Contact Section */
-#contact .container {
-    color: black;
-    text-align: center;
-}
-
-/* Contact Form Section */
-#contact {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-/* Container Styling */
-#contact .container {
-    max-width: 600px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
-#contact h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Form Group */
-.form-group {
-    margin-bottom: 20px;
-}
-
-/* Input Fields */
-input[type="text"], input[type="email"], textarea {
-    width: 100%;
-    padding: 12px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-/* Textarea */
-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-/* Submit Button */
-.submit-btn {
-    background-color: #f4b400;
+/* About Section (Side-by-Side Layout) */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
     color: #fff;
-    padding: 12px 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    text-align: left;
 }
 
-/* Submit Button Hover */
-.submit-btn:hover {
-    background-color: #f39c00;
+/* Image Size */
+.about-img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.2em;
 }
