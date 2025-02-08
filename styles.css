@@ -12,6 +12,7 @@ body {
     color: #fff;
     background: url('https://i.pinimg.com/736x/fd/07/7e/fd077ead179d4484f6bd4f5223a27068.jpg') no-repeat center center/cover;
     background-size: cover;
+    background-attachment: fixed;  /* This makes the background stay fixed */
 }
 
 /* Navigation Bar */
@@ -79,9 +80,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #fff;
+    color: black;
     gap: 30px; /* Spacing between image and text */
     flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    background: url('https://i.pinimg.com/originals/47/0e/39/470e39c7c57bb440e5e7a105b1c38db4.jpg') no-repeat center center/cover;
+    background-size: cover;
+    padding: 60px 20px;
 }
 
 .about-image {
@@ -105,13 +109,18 @@ section {
 /* Portfolio Section - Side by Side Layout */
 #portfolio .container {
     display: flex;
+    color: black;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    background: url('https://i.pinimg.com/originals/60/4d/67/604d675c5f7d51d75b1802d03d357279.jpg') no-repeat center center/cover;
+    background-size: cover;
+    padding: 60px 20px;
 }
 
 .portfolio-item {
     display: flex;
+    color: black;
     justify-content: space-between;
     gap: 30px;
     width: 100%;
@@ -123,7 +132,17 @@ section {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Investments Section - New Background */
+#investments {
+    background: url('https://i.pinimg.com/originals/62/96/2d/62962d8baf7a580497dc5e5d7de564b0.jpg') no-repeat center center/cover;
+    background-size: cover;
+    padding: 60px 20px;
+    color: black;
+    text-align: center;
+}
+
 /* Contact Section */
 #contact .container {
+    color: black;
     text-align: center;
 }
