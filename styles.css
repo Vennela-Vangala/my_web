@@ -26,7 +26,7 @@ header {
 }
 
 /* Navigation Bar Styling */
-.classic-nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,14 +34,14 @@ header {
 }
 
 /* Logo */
-.classic-nav .logo {
+.nav-container .logo {
     font-size: 1.8em;
     font-weight: bold;
     color: #f4b400;
 }
 
 /* This ensures navigation items are side by side */
-.classic-nav ul {
+.nav-links {
     display: flex;
     list-style: none;
     gap: 30px; /* Adjusts spacing between menu items */
@@ -50,11 +50,11 @@ header {
 }
 
 /* Individual Menu Items */
-.classic-nav ul li {
+.nav-links li {
     display: inline-block;
 }
 
-.classic-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -64,7 +64,7 @@ header {
 }
 
 /* Hover Effect */
-.classic-nav ul li a:hover {
+.nav-links li a:hover {
     color: #f4b400;
 }
 
@@ -74,33 +74,56 @@ section {
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* About Section (Side-by-Side Layout) */
-.about-content {
+/* About Section - Side by Side Layout */
+.about-container {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
     color: #fff;
-    text-align: left;
+    gap: 30px; /* Spacing between image and text */
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
 }
 
-/* Image Size */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
 .about-img {
     width: 300px;
-    height: auto;
+    height: 300px;
     border-radius: 50%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.about-text {
+    flex: 2;
+    text-align: left;
+    font-size: 1.1em;
 }
 
-.about-text p {
-    font-size: 1.2em;
+/* Portfolio Section - Side by Side Layout */
+#portfolio .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.portfolio-item img {
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+#contact .container {
+    text-align: center;
 }
