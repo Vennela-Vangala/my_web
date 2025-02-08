@@ -94,10 +94,11 @@ section {
 }
 
 .about-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 300px;    /* Make the width 300px */
+    height: 300px;   /* Make the height 300px to form a square */
+    border-radius: 0%;  /* Remove the circular border-radius for square shape */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;  /* Ensures the image fits the square without distortion */
 }
 
 .about-text {
